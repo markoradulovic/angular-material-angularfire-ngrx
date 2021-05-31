@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover,
+  &:active {
+    color: lightgray;
+  }
+}
+
+#logout {
+  cursor: pointer;
+}
+
+.link-container {
+  display: block;
+  margin-left: auto;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+
+  .link-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.menu-container {
+  display: none;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+}

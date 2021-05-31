@@ -1,0 +1,23 @@
+.new-training {
+  display: flex;
+  justify-content: center;
+
+  .training-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .card-container {
+      width: 400px;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

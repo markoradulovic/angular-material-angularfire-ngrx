@@ -1,0 +1,11 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav role="navigation" class="sidenav-container">
+    <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content-container">
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
